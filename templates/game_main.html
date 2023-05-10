@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Round Selector</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_main.css') }}">
+</head>
+<body>
+  <h1 style="font-size: 36px; text-align: center;">Inductive Logic Game</h1>
+  <h1 style="margin-top: 4em;">How many rounds do you want to play?</h1>
+  <form action="/initialize_session" method="post">
+    <input type="number" name="number_of_rounds" min="1" max="4" required>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
